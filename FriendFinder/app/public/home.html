@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    ​
+    ​
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+​
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center" style="background-color: rgb(185, 57, 89)">
+                    <h1> <i class="fa fa-fire"></i> Tinder 2.0 </h1>
+                    <hr>
+                    <h2>Let's get steamy</h2>
+                    ​<br>
+                    <a href="#" class="btn btn-lng btn-dark"> <i class="fa fa-list-alt"></i> Take Survey</a>
+                    ​
+                    <br>
+                    <br>
+                    <div id="musicControls" class="text-center">
+                            <button class="btn btn-white btn-xs theme-button">
+                              <span class="fa fa-music"></span> Play Luv Song</button>
+                            <button class="btn btn-white btn-xs pause-button">
+                              <span class="fa fa-pause"></span> Pause Song</button>
+                
+                
+                          </div>
+                </div>
+            </div>
+        </div>
+        ​
+        <footer>
+            <div class="row">
+                ​
+                <div class="col-md-12">
+                    <!-- <a href="#">API Table Link</a> | <a href="#"> API Wait List</a> -->
+                </div>
+            </div>
+        </footer>
+        ​
+    </div>
+    ​  <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "./theme.mp3");
+
+$(".theme-button").on("click", function () {
+    audioElement.play()
+});
+$(".pause-button").on("click", function () {
+    audioElement.pause()
+});
+});
+    </script>
+</body>
+​
+
+</html>
