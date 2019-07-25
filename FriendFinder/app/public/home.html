@@ -14,8 +14,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <style>
+            body{
+               font-family: 'Comfortaa', cursive;
+                color: white;
+                /* Location of the image */
+                background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("./daan-stevens-HYNwB0KcHHI-unsplash.jpg");
+                /* Background image is centered vertically and horizontally at all times */
+                background-position: center center;
+                /* Background image doesn't tile */
+                background-repeat: no-repeat;
+                /* Background image is fixed in the viewport so that it doesn't move when 
+                   the content's height is greater than the image's height */
+                background-attachment: fixed;
+                /* This is what makes the background image rescale based
+                   on the container's size */
+                background-size: cover;
+                /* Set a background color that will be displayed
+                   while the background image is loading */
+                background-color: #464646;
+                transition: 1s opacity;
+            }</style>
 </head>
 ​
 
@@ -28,7 +50,7 @@
                     <hr>
                     <h2>Let's Marvin Gaye and get it on</h2>
                     ​<br>
-                    <a href="#" class="btn btn-lng btn-dark"> <i class="fa fa-list-alt"></i> Take Survey</a>
+                    <a href="/survey" class="btn btn-lng btn-dark"> <i class="fa fa-list-alt"></i> Take Survey</a>
                     ​
                     <br>
                     <br>
@@ -55,6 +77,8 @@
         ​
     </div>
     ​
+        ​<!-- CODE FOR PLAY / PAUSE BUTTON FOR MUSIC -->
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
