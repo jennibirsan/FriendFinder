@@ -16,27 +16,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-<style>
-body{
-   font-family: 'Comfortaa', cursive;
-    color: white;
-    /* Location of the image */
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,.1)), url("./daan-stevens-HYNwB0KcHHI-unsplash.jpg");
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    /* Background image is fixed in the viewport so that it doesn't move when 
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            color: white;
+            /* Location of the image */
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .1)), url("./daan-stevens-HYNwB0KcHHI-unsplash.jpg");
+            /* Background image is centered vertically and horizontally at all times */
+            background-position: center center;
+            /* Background image doesn't tile */
+            background-repeat: no-repeat;
+            /* Background image is fixed in the viewport so that it doesn't move when 
        the content's height is greater than the image's height */
-    background-attachment: fixed;
-    /* This is what makes the background image rescale based
+            background-attachment: fixed;
+            /* This is what makes the background image rescale based
        on the container's size */
-    background-size: cover;
-    /* Set a background color that will be displayed
+            background-size: cover;
+            /* Set a background color that will be displayed
        while the background image is loading */
-    background-color: #464646;
-    transition: 1s opacity;
-}</style>
+            background-color: #464646;
+            transition: 1s opacity;
+        }
+    </style>
 </head>
 ​
 
@@ -84,6 +85,7 @@ body{
 
                             <div class="form-group">
                                 <label for="Pic">Send Us a Selfie (required)</label>
+                                <p style="font-size: 10px"> <i>By copying your pic's image address</i></p>
                                 <input type="text" class="form-control" id="pic">
                             </div>
                             <hr>
@@ -91,23 +93,23 @@ body{
                             <label for="Pets">1. How do you feel about pets?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="inlineRadio1" value="1">
+                                <input class="form-check-input" type="radio" name="q1" id="radio1" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Hell No)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="2">
+                                <input class="form-check-input" type="radio" name="q1" id="radio1" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="3">
+                                <input class="form-check-input" type="radio" name="q1" id="radio1" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="4">
+                                <input class="form-check-input" type="radio" name="q1" id="radio1" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Love Them)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="inlineRadio2" value="5">
+                                <input class="form-check-input" type="radio" name="q1" id="radio1" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Dealbreaker If You Don't Love
                                     Them)</label>
                             </div>
@@ -117,23 +119,23 @@ body{
                             <label for="Sports">2. How important are sports to you?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q2" id="inlineRadio1" value="1">
+                                <input class="form-check-input" type="radio" name="q2" id="radio2" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (IDGAF)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q2" id="inlineRadio2" value="2">
+                                <input class="form-check-input" type="radio" name="q2" id="radio2" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q2" id="inlineRadio2" value="3">
+                                <input class="form-check-input" type="radio" name="q2" id="radio2" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q2" id="inlineRadio2" value="4">
+                                <input class="form-check-input" type="radio" name="q2" id="radio2" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Big Fan)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q2" id="inlineRadio2" value="5">
+                                <input class="form-check-input" type="radio" name="q2" id="radio2" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Dealbreaker If You Don't Love
                                     It)</label>
                             </div>
@@ -143,28 +145,23 @@ body{
                             <label for="Organization">3. How are you when it comes to organization?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q3" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q3" id="radio3" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Not Good at All)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q3" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q3" id="radio3" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q3" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q3" id="radio3" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (It's Whatever)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q3" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q3" id="radio3" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Love It)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q3" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q3" id="radio3" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Clean Freak)</label>
                             </div>
 
@@ -173,28 +170,23 @@ body{
                             <label for="Kids">4. Thoughts on kids?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q4" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q4" id="radio4" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Hell No)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q4" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q4" id="radio4" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q4" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q4" id="radio4" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q4" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q4" id="radio4" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Love Them)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q4" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q4" id="radio4" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Dealbreaker If You Don't Love
                                     Them)</label>
                             </div>
@@ -204,28 +196,23 @@ body{
                             <label for="Phone">5. How do you feel about your partner owning an iPhone?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q5" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q5" id="radio5" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Hell No)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q5" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q5" id="radio5" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q5" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q5" id="radio5" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q5" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q5" id="radio5" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (A Want)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q5" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q5" id="radio5" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Dealbreaker If You Don't)</label>
                             </div>
 
@@ -235,28 +222,23 @@ body{
                             <label for="Education">6. How important is education to you?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q6" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q6" id="radio6" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Not at All)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q6" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q6" id="radio6" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q6" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q6" id="radio6" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q6" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q6" id="radio6" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Important)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q6" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q6" id="radio6" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Dealbreaker If You Don't Have
                                     One)</label>
                             </div>
@@ -267,56 +249,46 @@ body{
                             <label for="Morning">7. Are you a morning person?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7 value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Not at All)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh, Rarely)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Sometimes)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Most of the Time)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Always)</label>
                             </div>
                             <hr>
                             ​<label for="Looks">8. How important are looks to you?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q8" id="inlineRadio1"
-                                    value="1">
+                                <input class="form-check-input" type="radio" name="q8" id="radio8" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (I Don't Care)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q8" id="inlineRadio2"
-                                    value="2">
+                                <input class="form-check-input" type="radio" name="q8" id="radio8" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Meh)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q8" id="inlineRadio2"
-                                    value="3">
+                                <input class="form-check-input" type="radio" name="q8" id="radio8" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Indifferent)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q8" id="inlineRadio2"
-                                    value="4">
+                                <input class="form-check-input" type="radio" name="q8" id="radio8" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Pretty Important)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q8" id="inlineRadio2"
-                                    value="5">
+                                <input class="form-check-input" type="radio" name="q8" id="radio8" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Extremely Important)</label>
                             </div>
 
@@ -326,48 +298,48 @@ body{
                             ​<label for="Work">9. Are you a workaholic?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q9" id="inlineRadio1" value="1">
+                                <input class="form-check-input" type="radio" name="q9" id="radio9" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Not at All)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q9" id="inlineRadio2" value="2">
+                                <input class="form-check-input" type="radio" name="q9" id="radio9" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Not Usually)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q9" id="inlineRadio2" value="3">
+                                <input class="form-check-input" type="radio" name="q9" id="radio9" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (Sometimes)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q9" id="inlineRadio2" value="4">
+                                <input class="form-check-input" type="radio" name="q9" id="radio9" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Yes, Usually)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q9" id="inlineRadio2" value="5">
+                                <input class="form-check-input" type="radio" name="q9" id="radio9" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Extremely)</label>
                             </div>
 
                             ​
                             <hr>
-                            ​<label for="Funny">10. Are you outgoing or more shy?</label>
+                            ​<label for="Personality">10. Are you outgoing or more shy?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q10" id="inlineRadio1" value="1">
+                                <input class="form-check-input" type="radio" name="q10" id="radio10" value="1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Shy AF)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q10" id="inlineRadio2" value="2">
+                                <input class="form-check-input" type="radio" name="q10" id="radio10" value="2">
                                 <label class="form-check-label" for="inlineRadio2">2 (Prefer Intimate Settings)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q10" id="inlineRadio2" value="3">
+                                <input class="form-check-input" type="radio" name="q10" id="radio10" value="3">
                                 <label class="form-check-label" for="inlineRadio3">3 (A Bit of Both)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q10" id="inlineRadio2" value="4">
+                                <input class="form-check-input" type="radio" name="q10" id="radio10" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 (Very Social)</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q10" id="inlineRadio2" value="5">
+                                <input class="form-check-input" type="radio" name="q10" id="radio10" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 (Life of the Party)</label>
                             </div>
 
@@ -388,27 +360,25 @@ body{
         <br>
         <br>
         <footer>
-            <div class="row">
-                ​
-                <div class="col-md-12">
-                    <!-- <a href="#">API Table Link</a> | <a href="#"> API Wait List</a> -->
-                </div>
+            <div class="container">
+                <p><a style="color: blanchedalmond" href="/api/friends">All Matches</a> | <a
+                        style="color: blanchedalmond" href="https://github.com/jennibirsan/FriendFinder">GitHub</a>
             </div>
         </footer>
         ​
     </div>
     ​
     ​
-    <!-- CODE FOR PLAY / PAUSE BUTTON FOR MUSIC -->
     <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
     <script type="text/javascript">
 
         $(document).ready(function () {
+            // <!-- CODE FOR PLAY / PAUSE BUTTON FOR MUSIC -->
 
             var audioElement = document.createElement("audio");
             audioElement.setAttribute("src", "./theme.mp3");
@@ -428,21 +398,34 @@ body{
                 var pic = $("#pic").val().trim()
                 console.log("name:" + name + "pic:" + pic)
                 var input = $("input:checked")
-                console.log(input)
+                console.log("boom",input)
                 if (input.length < 10) {
                     alert("Please respond to all the questions :)")
                 }
                 else {
-                    var scores = []
+                    var scores = [];
                     for (var i = 0; i < input.length; i++) {
                         scores.push(parseInt(input[i].value))
 
                     }
+                    scores.push(
+                    $("#radio1").val().trim(),
+                    $("#radio2").val().trim(),
+                    $("#radio3").val().trim(),
+                    $("#radio4").val().trim(),
+                    $("#radio5").val().trim(),
+                    $("#radio6").val().trim(),
+                    $("#radio7").val().trim(),
+                    $("#radio8").val().trim(),
+                    $("#radio9").val().trim(),
+                    $("#radio10").val().trim()
+                    );
+                    
                     console.log("survey scores: ", scores)
                     var newSurvey = {
                         name: name,
                         pic: pic,
-                        scores: [1,1,1,1,1,1,1,1,1,1]
+                        scores: scores.map(Number)
                     }
                     $.post("/api/friends", newSurvey, function (best) {
                         /// open the modal with the best match info
@@ -450,9 +433,6 @@ body{
 
                     })
 
-                    // get the info from the survey (name/ photo / responses)
-                    // ajax call with the info (object)
-                    // with the resonse back we are going o open a modal with the pic andname of the bestmacth
                 }
             })
 
