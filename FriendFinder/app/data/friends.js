@@ -11,7 +11,14 @@ var friends = [
 		"photo": "https://pbs.twimg.com/profile_images/1094809650841767936/E9bT21NK.jpg",
 		"scores": [5,5,5,5,5,5,5,5,5,5]
 		//50		
+	},
+	{
+		"name": "Jess Sirbu",
+		"photo": "https://pbs.twimg.com/profile_images/899302758129557506/mHynMMqK_400x400.jpg",
+		"scores": [2,3,2,3,4,2,4,2,3,3]
+			
 	}
+
 ];
 
 //send back to server

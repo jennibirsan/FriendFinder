@@ -66,6 +66,29 @@
             </div>
         </div>
         ​
+        <!-- MODAL -->
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle" style="color: black">Love is in the air...</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="color: black">
+                      Meet Your Match
+                    </div>
+                    <div id="matchname" style="text-align: center; color: black">
+                    </div>
+                    <div id="matchphoto"></div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
         <!-- SURVEY QUESTIONS -->
         ​
@@ -349,7 +372,7 @@
                         </form>
                         <br>
                         <br>
-                        <input type="submit" id="submit" class="btn btn-lng btn-dark">
+                        <input type="submit" id="submit" class="btn btn-lng btn-dark" data-toggle="modal" data-target="#ModalCenter">
                     </div>
                 </div>
             </div>
@@ -393,7 +416,6 @@
 
             $("#submit").on("click", function (event) {
                 event.preventDefault()
-
                 var name = $("#name").val().trim()
                 var pic = $("#pic").val().trim()
                 console.log("name:" + name + "pic:" + pic)
@@ -428,9 +450,11 @@
                         scores: scores.map(Number)
                     }
                     $.post("/api/friends", newSurvey, function (best) {
-                        /// open the modal with the best match info
                         console.log("best: ", best)
-
+                    $("#matchname").text(best.name)
+                    console.log("my name is: "+ best.name)
+                    // $("#matchphoto").text(best.pic)
+                    // console.log("my pic: "+ best.pic)
                     })
 
                 }
