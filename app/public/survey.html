@@ -67,27 +67,29 @@
         </div>
         ​
         <!-- MODAL -->
-        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle" style="color: black">Love is in the air...</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: black">Love is in the air...
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body" style="color: black">
-                      Meet Your Match
+                        Meet Your Match
                     </div>
                     <div id="matchname" style="text-align: center; color: black">
                     </div>
                     <div id="matchphoto"></div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div>
 
 
         <!-- SURVEY QUESTIONS -->
@@ -272,7 +274,7 @@
                             <label for="Morning">7. Are you a morning person?</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q7" id="radio7 value="1">
+                                <input class="form-check-input" type="radio" name="q7" id="radio7 value=" 1">
                                 <label class="form-check-label" for="inlineRadio1">1 (Not at All)</label>
                             </div>
                             <div class="form-check form-check-inline">
@@ -372,7 +374,8 @@
                         </form>
                         <br>
                         <br>
-                        <input type="submit" id="submit" class="btn btn-lng btn-dark" data-toggle="modal" data-target="#ModalCenter">
+                        <input type="submit" id="submit" class="btn btn-lng btn-dark" data-toggle="modal"
+                            data-target="#ModalCenter">
                     </div>
                 </div>
             </div>
@@ -420,7 +423,7 @@
                 var pic = $("#pic").val().trim()
                 console.log("name:" + name + "pic:" + pic)
                 var input = $("input:checked")
-                console.log("boom",input)
+                console.log("boom", input)
                 if (input.length < 10) {
                     alert("Please respond to all the questions :)")
                 }
@@ -431,18 +434,18 @@
 
                     }
                     scores.push(
-                    $("#radio1").val().trim(),
-                    $("#radio2").val().trim(),
-                    $("#radio3").val().trim(),
-                    $("#radio4").val().trim(),
-                    $("#radio5").val().trim(),
-                    $("#radio6").val().trim(),
-                    $("#radio7").val().trim(),
-                    $("#radio8").val().trim(),
-                    $("#radio9").val().trim(),
-                    $("#radio10").val().trim()
+                        $("#radio1").val().trim(),
+                        $("#radio2").val().trim(),
+                        $("#radio3").val().trim(),
+                        $("#radio4").val().trim(),
+                        $("#radio5").val().trim(),
+                        $("#radio6").val().trim(),
+                        $("#radio7").val().trim(),
+                        $("#radio8").val().trim(),
+                        $("#radio9").val().trim(),
+                        $("#radio10").val().trim()
                     );
-                    
+
                     console.log("survey scores: ", scores)
                     var newSurvey = {
                         name: name,
@@ -451,10 +454,15 @@
                     }
                     $.post("/api/friends", newSurvey, function (best) {
                         console.log("best: ", best)
-                    $("#matchname").text(best.name)
-                    console.log("my name is: "+ best.name)
-                    // $("#matchphoto").text(best.pic)
-                    // console.log("my pic: "+ best.pic)
+                        var img = `<img id="dynamic" src=${best.pic}></img>`;
+                        //img.attr('src', best.pic);
+                        console.log(img)
+                        $("#matchphoto").append(img);
+                        $("#matchname").text(best.name)
+                        console.log("my name is: " + best.name)
+                        // $("#matchphoto").text(best.pic)
+                       
+                        //img.append('#matchphoto');
                     })
 
                 }

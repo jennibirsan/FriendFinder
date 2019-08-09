@@ -32,10 +32,8 @@ module.exports = function (app) {
   app.post("/api/friends", function (req, res) {
     console.log("req.body")
     console.log(req.body)
-
-    var bestMatch = {
-
-    };
+    console.log(friendsData)
+    var bestMatch = {};
 
     //comparative number for user's array total
     var userTotal = sum(req.body.scores);
@@ -58,7 +56,8 @@ module.exports = function (app) {
       if (difference <= closest) {
         closest = difference;
         bestMatch.name = friendsData[i].name;
-        bestMatch.pic = friendsData[i].photo;
+        bestMatch.pic = friendsData[i].pic;
+        console.log(bestMatch)
       };
     };
 
